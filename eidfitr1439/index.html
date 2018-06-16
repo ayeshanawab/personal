@@ -43,9 +43,9 @@
  </div>
 <script>
  
- var newName = window.location.href.split("?")[1];
+ var newName = window.location.href.split("?")[1]; 
  if(typeof newName !== 'undefined'){
-  document.getElementById("name").innerHTML = newName;
+  document.getElementById("name").innerHTML = decodeURI(newName);
  }
   
   
