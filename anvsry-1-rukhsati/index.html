@@ -15,26 +15,40 @@
         .section {
             text-align: center;
             font-size: 3em;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+            background-color: red;
+        }
+        .s1{
+            background-image: url('https://www.sun-tropical.com/wp-content/uploads/2016/02/Two-Dozen-Romantic-Red-Roses_bouq.jpg')
+        }
+        .s2{
+            background-image: url('https://cimages.prvd.com/is/image/ProvideCommerce/PF_18_R102_LAY_SHP_V1')
+        }
+        .s3{
+            background-image: url('https://www.fairtrade.org.uk/~/media/FairtradeUK/Media%20Centre/Flowers.jpg')
+        }
+        .s4{
+            background-image: url('https://bouqs-production-weblinc.netdna-ssl.com/product_images/red-roses/Deluxe/593e2df4617070341200002f/large_thumb.jpg?')
         }
     </style>
 </head>
 
 <body>
     <div id="fullpage">
-        <div class="section">One</div>
-        <div class="section">
-            <div class="slide" data-anchor="slide1">Two 1</div>
-            <div class="slide" data-anchor="slide2">Two 2</div>
-        </div>
-        <div class="section">Three</div>
-        <div class="section">Four</div>
+        <div class="section s1">Assalaam o Alaikum</div>
+        <div class="section s2">It's been a year since we are together.</div>
+        <div class="section s3">Inshallah we will be together in this dunya and in Jannah!</div>
+        <div class="section s4">أرجو أن تعرف كم أحب وأقدر لك. انت تعني العالم بالنسبة لي</div>
     </div>
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
     <script src="https://rawgit.com/alvarotrigo/fullPage.js/dev/src/fullpage.js"></script>
     <script>
         new fullpage('#fullpage', {
             licenseKey: null,
-            sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
+            continuousVertical: true,
+            // sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
         });
     </script>
 </body>
